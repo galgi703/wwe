@@ -1,0 +1,36 @@
+/* common.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+}
+
+.image-box {
+    margin-top: 20px;
+    position: relative;
+}
+
+#gameImage {
+    width: 100%px;
+    height: 150px;
+    cursor: pointer;
+    transition: transform 0.5s ease; /* transform으로 이미지 애니메이션 */
+}
+
+#gameImage.clicked {
+    transform: translateY(100px); /* 클릭 시 사진이 아래로 내려가는 효과 */
+}
